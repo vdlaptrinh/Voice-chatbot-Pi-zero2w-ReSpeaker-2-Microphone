@@ -63,7 +63,7 @@ def main():
         while success:
             #Gspeak("Ask me a question or say quit", filename)
             pixels.wakeup()
-            subprocess.call(["ffplay", "-nodisp", "-autoexit", 'ding.mp3'])
+            subprocess.call(["ffplay", "-nodisp", "-autoexit", 'sounds/ding.mp3'])
             #text_to_speech("Xin chào", filename)
             #play(filename)
             #query = recognize_speech()
@@ -94,7 +94,7 @@ def main():
                     loi=0
                     success = False
             pixels.off()
-            subprocess.call(["ffplay", "-nodisp", "-autoexit", "/home/pi/Personal-AI-Assistant/sounds/dong.mp3"])
+            subprocess.call(["ffplay", "-nodisp", "-autoexit", "sounds/dong.mp3"])
             pixels.off()
             print("End trò chuyện")
 
